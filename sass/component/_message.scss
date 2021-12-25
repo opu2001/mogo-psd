@@ -1,0 +1,55 @@
+/* message part start */ 
+#message{ 
+    padding: 100px 0;
+    position: relative;
+    .before{ 
+        position: absolute;
+        color: #cccccc;
+        top: 40%;
+        right: 10%;
+        font-size: 20px;
+        z-index: 14;
+    }
+    .after{ 
+        position: absolute;
+        top: 40%;
+        color: #cccccc;
+        left: 9%;
+        font-size: 20px;
+        z-index: 14;
+    }
+    .mess_main{ 
+        .mess_item{ 
+            .mess_text{ 
+                margin-left: 30px;
+                span{ 
+                    width: 750px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-style: italic;
+                    color: #999999;
+                }
+                h5{ 
+                    font-family: 'Kaushan Script', cursive;
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: #333333;
+                    padding-left: 45px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        height: 3px;
+                        width: 49px;
+                        background: #f38181;
+                        top: 14px;
+                        left: -1%;
+                    }
+                }
+            }
+        }
+    }
+} 
+/*message part end */

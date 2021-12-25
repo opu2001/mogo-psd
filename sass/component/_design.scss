@@ -1,0 +1,65 @@
+/*design part start*/ 
+#design{ 
+    padding: 110px 0 0 0;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 1;
+    &::after{ 
+        position: absolute;
+        content: '';
+        background: rgba(227, 227, 227, 0.5);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    .title{ 
+        .title_text{ 
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: -40%;
+                left: 50%;
+                height: 3px;
+                width: 60px;
+                background: #f38181;
+                transform:  translate(-50%, -50%) ;
+                -webkit-transform:  translate(-50%, -50%) ;
+                -moz-transform:  translate(-50%, -50%) ;
+                -ms-transform:  translate(-50%, -50%) ;
+                -o-transform:  translate(-50%, -50%) ;
+}
+            h3{ 
+                @include title_head3
+            }
+            h4{ 
+                @include title_head4;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .design_main{ 
+        margin-top: 70px;
+        position: relative;
+        .design_img{ 
+            width: 285px;
+            margin: 0 auto;
+            img{ 
+                width: 100%;
+            }
+        }
+        .image_two{  
+                position: absolute;
+                left: 54%;
+                top: 31%;
+                width: 230px;
+            img{ 
+                width: 100%;
+            }
+        }
+    }
+}

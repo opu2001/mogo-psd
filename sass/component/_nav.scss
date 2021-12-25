@@ -1,0 +1,84 @@
+/* nav part start */ 
+
+.menu_ng{
+    background: #f38181;
+    animation: selim 2s;
+    -webkit-animation: selim 2s;
+}
+@keyframes selim{ 
+    from{ 
+        margin-top: -60px;
+    }
+    to{ 
+        margin-top: 0px;
+    }
+}
+.menu_bar{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 22;
+    padding: 20px 0; 
+   
+    ul{ 
+        li{ 
+            margin: 0 12px;
+            a{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: white !important;
+                font-size: 14px;
+                text-transform: uppercase;
+                transition: all linear 0.2s;
+                -webkit-transition: all linear 0.2s;
+                -moz-transition: all linear 0.2s;
+                -ms-transition: all linear 0.2s;
+                -o-transition: all linear 0.2s;
+                position: relative;         
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 3px;
+                    width: 60px;
+                    background-color: #fce38a;
+                    bottom: 0%;
+                    left: 11%;
+                    transition: all linear 0.2s;
+                    -webkit-transition: all linear 0.2s;
+                    -moz-transition: all linear 0.2s;
+                    -ms-transition: all linear 0.2s;
+                    -o-transition: all linear 0.2s;
+                    opacity: 0;
+                   
+} 
+&:hover::after{ 
+    opacity: 1;
+}
+&:hover{ 
+    color: #fce38a !important;
+}
+}
+        }
+    }
+}
+/* back to top start */ 
+.back2top{  
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 23;
+    i{
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: red;
+        color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+}

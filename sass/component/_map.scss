@@ -1,0 +1,43 @@
+/* map part start */ 
+#map{ 
+    padding: 55px 0 80px 0;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    z-index: 1;
+    position: relative;
+    &::after{ 
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(249, 249, 249, 0.5);
+        z-index: -1;
+    } 
+    .map_item{ 
+        position: relative; 
+        &::after{ 
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 60px;
+            background: #f38181;
+            bottom: -17px;
+            left: 54px;
+        }
+        }
+        }
+        i{ 
+            color: #f38181;
+            font-size: 24px;
+        }
+        h4{ 
+            color: #f38181;
+            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+             font-weight: 700; 
+             text-transform: uppercase;
+        }
+/* map part end */ 

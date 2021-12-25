@@ -1,0 +1,64 @@
+@import "../mixin/mixin"; 
+/*service part start*/ 
+#service{ 
+    padding: 110px 0 120px 0;
+    .title{ 
+        .title_text{ 
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: -40%;
+                left: 50%;
+                height: 3px;
+                width: 60px;
+                background: #f38181;
+                transform:  translate(-50%, -50%) ;
+                -webkit-transform:  translate(-50%, -50%) ;
+                -moz-transform:  translate(-50%, -50%) ;
+                -ms-transform:  translate(-50%, -50%) ;
+                -o-transform:  translate(-50%, -50%) ;
+}
+            h3{ 
+                @include title_head3
+            }
+            h4{ 
+                @include title_head4;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .ser_main{ 
+        margin-top: 110px;
+        .ser_text{  
+            padding-left: 55px;
+            position: relative;
+            h3{ 
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                color: #333333;
+                text-transform: uppercase;
+                padding-bottom: 5px;
+            }
+            p{ 
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: #b3b3b3;
+                line-height: 24px;
+            }
+            i{ 
+                color: #95e1d3;
+                font-size: 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .ser_two{ 
+            margin-bottom: 90px;
+        }
+    }
+} 
+/*service part end*/ 

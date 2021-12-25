@@ -1,0 +1,33 @@
+@mixin banner_btn {
+    padding: 10px 30px;
+    background: transparent;
+    border: 3px solid white;
+}
+@mixin bann_ank {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white !important;
+}
+@mixin title_head3 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+    padding-bottom: 14px;
+}
+@mixin title_head4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+}
+@mixin title_para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+}

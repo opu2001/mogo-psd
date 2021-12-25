@@ -1,0 +1,23 @@
+/*counter part start */ 
+#counter{ 
+    padding: 85px 0;
+    background-color: #95e1d3;
+    .counter_inner{ 
+          border-right: 1px solid #b5eae0;
+        border-left: 1px solid #b5eae0;
+        .counter_item{ 
+            span{ 
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 72px;
+            }
+            h5{ 
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+} 
+/*counter part end*/
